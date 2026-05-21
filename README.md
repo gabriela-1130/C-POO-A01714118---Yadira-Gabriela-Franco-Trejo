@@ -1,5 +1,4 @@
 # Proyecto Integrador POO
-## Yadira Gabriela Franco Trejo A01714118
 ### Sistema de Recomendación Musical
 
 Autor:  
