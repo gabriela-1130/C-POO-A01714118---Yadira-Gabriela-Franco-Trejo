@@ -7,12 +7,12 @@ A01714118
 
 ---
 
-## Descripción
+## Descripción ⋆.𐙚 ̊
 
 Este proyecto consiste en un sistema de recomendación musical inspirado en plataformas de streaming como Spotify.
 
 El sistema permite:
-- crear canciones de distintos géneros
+- añadir canciones de distintos géneros
 - crear playlists
 - recomendar playlists según mood, género o energía
 - guardar historial de reproducción
@@ -20,7 +20,7 @@ El sistema permite:
 
 ---
 
-## Conceptos de POO implementados
+## Conceptos de POO implementados ⊹ ࣪ ˖
 
 ### Herencia
 
@@ -43,7 +43,7 @@ heredan de `Recomendador`.
 
 ---
 
-### Sobreescritura (Override)
+### Sobreescritura (Override) .☘︎ ݁˖
 
 Las clases hijas sobrescriben métodos como:
 
@@ -57,7 +57,7 @@ permitiendo comportamiento distinto según el objeto.
 
 ---
 
-### Sobrecarga (Overload)
+### Sobrecarga (Overload) ♬⋆.˚
 
 La clase `Playlist` implementa sobrecarga en:
 
@@ -68,7 +68,7 @@ agregarCancion(vector<Cancion*> canciones)
 
 ---
 
-### Modificadores de acceso
+### Modificadores de acceso ˙⋆✮
 
 Se utilizaron:
 - `private`
@@ -79,7 +79,7 @@ para controlar el acceso a atributos y métodos.
 
 ---
 
-## Estructura del proyecto
+## Estructura del proyecto .𖥔 ݁ ˖
 
 ```txt
 main.cpp
@@ -98,18 +98,5 @@ RecomendadorEnergia.h / RecomendadorEnergia.cpp
 Biblioteca.h / Biblioteca.cpp
 ```
 
----
-
-## Compilación
-
-```bash
-g++ main.cpp -o proyecto
-```
-
----
-
-## Ejecución
-
-```bash
 ./proyecto
 ```
