@@ -98,5 +98,4 @@ RecomendadorEnergia.h / RecomendadorEnergia.cpp
 Biblioteca.h / Biblioteca.cpp
 ```
 
-./proyecto
-```
+
