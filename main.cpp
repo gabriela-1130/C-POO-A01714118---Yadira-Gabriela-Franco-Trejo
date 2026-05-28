@@ -24,9 +24,8 @@ using namespace std;
 #include "Biblioteca.h"
 #include "Historial.h"
 
-// =========================
 // IMPLEMENTACIONES
-// =========================
+
 
 #include "Cancion.cpp"
 #include "CancionRock.cpp"
@@ -45,6 +44,38 @@ using namespace std;
 
 #include "Biblioteca.cpp"
 #include "Historial.cpp"
+
+void probarPolimorfismoCanciones(vector<Cancion*> canciones) {
+
+    cout << "===== POLIMORFISMO EN CANCIONES =====" << endl;
+    cout << endl;
+
+    for (Cancion* c : canciones) {
+
+        c->reproducir();
+
+        c->mostrarInfo();
+
+        cout << endl;
+    }
+}
+
+void probarPolimorfismoRecomendadores(
+    vector<Recomendador*> recomendadores
+) {
+
+    cout << "===== POLIMORFISMO EN RECOMENDADORES =====" << endl;
+    cout << endl;
+
+    for (Recomendador* r : recomendadores) {
+
+        Playlist p = r->generarPlaylist();
+
+        p.mostrarPlaylist();
+
+        cout << endl;
+    }
+}
 
 int main() {
 
@@ -85,17 +116,14 @@ int main() {
     );
 
 
-    c1->mostrarInfo();
-    cout << endl;
+    vector<Cancion*> todasLasCanciones;
 
-    c2->mostrarInfo();
-    cout << endl;
+    todasLasCanciones.push_back(c1);
+    todasLasCanciones.push_back(c2);
+    todasLasCanciones.push_back(c3);
+    todasLasCanciones.push_back(c4);
 
-    c3->mostrarInfo();
-    cout << endl;
-
-    c4->mostrarInfo();
-    cout << endl;
+    probarPolimorfismoCanciones(todasLasCanciones);
 
 //playlist
 
@@ -152,25 +180,25 @@ int main() {
 
     Recomendador* r3 = new RecomendadorEnergia();
 
-    //Generar playlists
-    Playlist moodPlaylist = r1->generarPlaylist();
+   vector<Recomendador*> recomendadores;
 
-    Playlist generoPlaylist = r2->generarPlaylist();
-
-    Playlist energiaPlaylist = r3->generarPlaylist();
-
-    //Mostrarlas 
-    cout << endl;
-
-    moodPlaylist.mostrarPlaylist();
+    recomendadores.push_back(r1);
+    recomendadores.push_back(r2);
+    recomendadores.push_back(r3);
 
     cout << endl;
 
-    generoPlaylist.mostrarPlaylist();
+    probarPolimorfismoRecomendadores(recomendadores);
 
-    cout << endl;
+    //Liberar memoria
+    delete c1;
+    delete c2;
+    delete c3;
+    delete c4;
 
-    energiaPlaylist.mostrarPlaylist();
+    delete r1;
+    delete r2;
+    delete r3;
 
     return 0;
 }
