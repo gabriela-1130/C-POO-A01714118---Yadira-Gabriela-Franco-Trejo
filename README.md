@@ -16,8 +16,7 @@ El sistema permite:
 - crear playlists
 - recomendar playlists según mood, género o energía
 - guardar historial de reproducción
-- demostrar conceptos de Programación Orientada a Objetos
-
+- demostrar conceptos de Programación Orientada a Objetos como herencia, polimorfismo y sobrecarga
 ---
 
 ## Conceptos de POO implementados ⊹ ࣪ ˖
@@ -43,7 +42,15 @@ heredan de `Recomendador`.
 
 ---
 
-### Sobreescritura (Override) .☘︎ ݁˖
+### Polimorfismo y sobrescritura .☘︎ ݁˖
+El polimorfismo se implementó utilizando punteros a clases padre como:
+
+```cpp
+Cancion* c = new CancionRock(...);
+Recomendador* r = new RecomendadorMood();
+```
+
+permitiendo ejecutar distintos comportamientos dependiendo del objeto hijo asociado.
 
 Las clases hijas sobrescriben métodos como:
 
