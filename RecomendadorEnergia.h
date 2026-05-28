@@ -13,8 +13,8 @@ private:
     int nivelEnergia;
 
 public:
-    Playlist generarPlaylist() override;
-    vector<Cancion*> recomendarCanciones() override;
+    Playlist generarPlaylist();
+    vector<Cancion*> recomendarCanciones();
 };
 
 #endif
