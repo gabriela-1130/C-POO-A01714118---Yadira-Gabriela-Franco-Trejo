@@ -12,6 +12,7 @@ protected:
     vector<Playlist> historialRecomendaciones;
 
 public:
+    virtual ~Recomendador() {}
     virtual Playlist generarPlaylist() = 0;
     virtual vector<Cancion*> recomendarCanciones() = 0;
 };
