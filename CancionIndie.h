@@ -16,8 +16,8 @@ public:
         float duracion
     );
 
-    void reproducir() override;
-    void mostrarInfo() override;
+    virtual void reproducir();
+    virtual void mostrarInfo();
 };
 
 #endif
