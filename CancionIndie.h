@@ -16,8 +16,8 @@ public:
         float duracion
     );
 
-    virtual void reproducir();
-    virtual void mostrarInfo();
+    void reproducir();
+    void mostrarInfo();
 };
 
 #endif
