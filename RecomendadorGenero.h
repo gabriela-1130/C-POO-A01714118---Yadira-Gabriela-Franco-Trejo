@@ -10,8 +10,8 @@ private:
     vector<string> generosPreferidos;
 
 public:
-    Playlist generarPlaylist() override;
-    vector<Cancion*> recomendarCanciones() override;
+    Playlist generarPlaylist();
+    vector<Cancion*> recomendarCanciones();
 };
 
 #endif
