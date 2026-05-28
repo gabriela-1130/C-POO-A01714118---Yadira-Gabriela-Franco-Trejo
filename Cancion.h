@@ -16,6 +16,7 @@ protected:
     float duracion;
 
 public:
+    virtual ~Cancion() {}
     Cancion(
         string titulo,
         string artista,
