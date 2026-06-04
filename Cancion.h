@@ -17,6 +17,7 @@ protected:
 
 public:
     virtual ~Cancion() {}
+
     Cancion(
         string titulo,
         string artista,
@@ -26,8 +27,9 @@ public:
         float duracion
     );
 
-    virtual void reproducir();
-    virtual void mostrarInfo();
+    virtual void reproducir() = 0;
+    virtual void mostrarInfo() = 0;
+
 
     //getters y setters
     string getTitulo();
