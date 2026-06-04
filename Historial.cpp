@@ -23,3 +23,6 @@ void Historial::mostrarResumen() {
         cout << "- " << mood << endl;
     }
 }
+void Historial::guardarReproduccion() {
+    cout << "Reproduccion guardada" << endl;
+}
