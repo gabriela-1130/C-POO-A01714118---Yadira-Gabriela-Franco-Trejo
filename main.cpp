@@ -24,6 +24,7 @@ using namespace std;
 #include "Biblioteca.h"
 #include "Historial.h"
 
+
 // IMPLEMENTACIONES
 
 
@@ -47,7 +48,7 @@ using namespace std;
 
 void probarPolimorfismoCanciones(vector<Cancion*> canciones) {
 
-    cout << "===== POLIMORFISMO EN CANCIONES =====" << endl;
+    cout << "POLIMORFISMO EN CANCIONES" << endl;
     cout << endl;
 
     for (Cancion* c : canciones) {
@@ -64,7 +65,7 @@ void probarPolimorfismoRecomendadores(
     vector<Recomendador*> recomendadores
 ) {
 
-    cout << "===== POLIMORFISMO EN RECOMENDADORES =====" << endl;
+    cout << "POLIMORFISMO EN RECOMENDADORES" << endl;
     cout << endl;
 
     for (Recomendador* r : recomendadores) {
@@ -171,7 +172,7 @@ int main() {
 
     //Crear recomendadores
     cout << endl;
-    cout << "===== RECOMENDADORES =====" << endl;
+    cout << "RECOMENDADORES" << endl;
     cout << endl;
 
     Recomendador* r1 = new RecomendadorMood();
