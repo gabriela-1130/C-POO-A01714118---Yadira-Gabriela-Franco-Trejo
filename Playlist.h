@@ -1,9 +1,11 @@
-
 #ifndef PLAYLIST_H
 #define PLAYLIST_H
 
 #include <vector>
+#include <string>
 #include "Cancion.h"
+
+using namespace std;
 
 class Playlist {
 
@@ -20,9 +22,8 @@ public:
 
     void eliminarCancion();
     void mostrarPlaylist();
-    string getNombre();
 
-    //getters y setters
+    string getNombre();
     string getMoodPrincipal();
 
     void setNombre(string nombre);
