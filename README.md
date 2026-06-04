@@ -16,7 +16,8 @@ El sistema permite:
 - crear playlists
 - recomendar playlists según mood, género o energía
 - guardar historial de reproducción
-- demostrar conceptos de Programación Orientada a Objetos como herencia, polimorfismo y sobrecarga
+- demostrar conceptos de Programación Orientada a Objetos como herencia, polimorfismo, clases abstractas y sobrecarga
+ 
 ---
 
 ## Conceptos de POO implementados ⊹ ࣪ ˖
@@ -42,6 +43,25 @@ heredan de `Recomendador`.
 
 ---
 
+### Clases Abstractas ✧.*
+
+El proyecto utiliza las siguientes clases abstractas:
+
+- `Cancion`
+- `Recomendador`
+
+Estas clases definen métodos virtuales puros que deben ser implementados por las clases hijas.
+
+Ejemplos:
+
+```cpp
+virtual void reproducir() = 0;
+virtual void mostrarInfo() = 0;
+virtual Playlist generarPlaylist() = 0;
+virtual vector<Cancion*> recomendarCanciones() = 0;
+```
+---
+
 ### Polimorfismo y sobrescritura .☘︎ ݁˖
 El polimorfismo se implementó utilizando punteros a clases padre como:
 
@@ -64,7 +84,7 @@ permitiendo comportamiento distinto según el objeto.
 
 ---
 
-### Sobrecarga (Overload) ♬⋆.˚
+### Sobrecarga de Métodos ♬⋆.˚
 
 La clase `Playlist` implementa sobrecarga en:
 
@@ -72,7 +92,12 @@ La clase `Playlist` implementa sobrecarga en:
 agregarCancion(Cancion* c)
 agregarCancion(vector<Cancion*> canciones)
 ```
+También la clase `Historial` implementa sobrecarga mediante:
 
+```cpp
+guardarReproduccion()
+guardarReproduccion(Cancion* cancion)
+```
 ---
 
 ### Modificadores de acceso ˙⋆✮
@@ -83,6 +108,28 @@ Se utilizaron:
 - `public`
 
 para controlar el acceso a atributos y métodos.
+
+---
+
+## Ejecución del programa ⚙️
+
+Para ejecutar el proyecto:
+
+1. Abrir el proyecto en Dev-C++, CodeBlocks o Visual Studio.
+2. Compilar el archivo `main.cpp`.
+3. Ejecutar el programa.
+
+El programa mostrará:
+- Polimorfismo en canciones.
+- Creación de playlists.
+- Historial de reproducción.
+- Polimorfismo en recomendadores.
+
+---
+
+## Conclusión ✦
+
+Este proyecto permitió aplicar conceptos fundamentales de Programación Orientada a Objetos como herencia, polimorfismo, clases abstractas, encapsulación y sobrecarga de métodos mediante el desarrollo de un sistema de recomendación musical inspirado en plataformas de streaming.
 
 ---
 
