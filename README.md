@@ -50,7 +50,7 @@ El proyecto utiliza las siguientes clases abstractas:
 - `Cancion`
 - `Recomendador`
 
-Estas clases definen métodos virtuales puros que deben ser implementados por las clases hijas.
+Estas clases definen métodos virtuales puros que deben ser implementados por las clases hijas. Esto permite definir un comportamiento general para las canciones y recomendadores, favoreciendo la reutilización de código y el polimorfismo.
 
 Ejemplos:
 
@@ -92,12 +92,33 @@ La clase `Playlist` implementa sobrecarga en:
 agregarCancion(Cancion* c)
 agregarCancion(vector<Cancion*> canciones)
 ```
-También la clase `Historial` implementa sobrecarga mediante:
+
+Estos métodos tienen el mismo nombre, pero reciben parámetros diferentes. Esto permite agregar una sola canción o varias canciones utilizando el mismo método.
+
+La clase `Historial` también implementa sobrecarga mediante:
 
 ```cpp
 guardarReproduccion()
 guardarReproduccion(Cancion* cancion)
 ```
+
+En este caso, ambos métodos comparten el mismo nombre, pero uno no recibe parámetros y el otro recibe un objeto de tipo `Cancion`. Esto permite realizar distintas acciones dependiendo de la información proporcionada al método.
+
+---
+
+### Encapsulación ｡𖦹°‧
+
+La encapsulación se implementó mediante atributos privados y protegidos, así como el uso de getters y setters para controlar el acceso a la información de las clases.
+
+Ejemplos:
+
+```cpp
+string getTitulo();
+void setTitulo(string titulo);
+```
+
+Esto permite proteger los datos internos de los objetos y acceder a ellos de forma controlada.
+
 ---
 
 ### Modificadores de acceso ˙⋆✮
@@ -111,7 +132,7 @@ para controlar el acceso a atributos y métodos.
 
 ---
 
-## Ejecución del programa ⚙️
+## Ejecución del programa 𝄞⨾𓍢ִ໋
 
 Para ejecutar el proyecto:
 
