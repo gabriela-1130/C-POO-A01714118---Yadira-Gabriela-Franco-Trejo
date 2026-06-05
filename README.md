@@ -20,6 +20,27 @@ El sistema permite:
  
 ---
 
+## Consideraciones y casos que harían que el proyecto deje de funcionar
+
+El programa está diseñado para ejecutarse en consola usando C++ estándar.
+
+Casos que podrían causar errores o comportamiento incorrecto:
+
+- Si se elimina alguna clase hija obligatoria, como `CancionRock`, `CancionPop`, `CancionIndie`, `CancionMetal`, `RecomendadorMood`, `RecomendadorGenero` o `RecomendadorEnergia`, el programa puede dejar de compilar porque el `main.cpp` crea objetos de esas clases.
+
+- Si una clase hija no implementa los métodos virtuales puros heredados de una clase abstracta, no se podrán crear objetos de esa clase.
+
+- Si se intenta crear directamente un objeto de una clase abstracta como `Cancion` o `Recomendador`, el programa no compilará.
+
+- Si se pasa un puntero nulo a métodos como `agregarCancion(Cancion* c)` o `escucharCancion(Cancion* cancion)`, el programa podría fallar al intentar acceder a métodos de una canción inexistente.
+
+- Si no se incluyen correctamente los archivos `.h` y `.cpp`, el programa puede marcar errores de compilación.
+
+- Si se compilan todos los archivos `.cpp` por separado además de incluirlos dentro de `main.cpp`, pueden aparecer errores por definiciones duplicadas.
+
+- Si se cambian los nombres de archivos o clases sin actualizar los `#include`, el programa no compilará.
+
+---
 ## Conceptos de POO implementados ⊹ ࣪ ˖
 
 ### Herencia
@@ -140,11 +161,34 @@ Para ejecutar el proyecto:
 2. Compilar el archivo `main.cpp`.
 3. Ejecutar el programa.
 
+### Compilación
+
+El proyecto corre en consola y está hecho en C++ estándar.
+
+Compilar con:
+
+```bash
+g++ main.cpp
+```
+
+Ejecutar en Linux/Mac:
+
+```bash
+./a.out
+```
+
+Ejecutar en Windows:
+
+```bash
+a.exe
+```
+
 El programa mostrará:
-- Polimorfismo en canciones.
-- Creación de playlists.
-- Historial de reproducción.
-- Polimorfismo en recomendadores.
+
+* Polimorfismo en canciones.
+* Creación de playlists.
+* Historial de reproducción.
+* Polimorfismo en recomendadores.
 
 ---
 
