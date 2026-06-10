@@ -17,7 +17,7 @@ Cancion::Cancion(
     this->duracion = duracion;
 }
 
-void Cancion::reproducir() {
+/*void Cancion::reproducir() {
     cout << "Reproduciendo cancion..." << endl;
 }
 
@@ -25,7 +25,7 @@ void Cancion::mostrarInfo() {
     cout << "Titulo: " << titulo << endl;
     cout << "Artista: " << artista << endl;
 }
-
+*/
 //getters y setters
 string Cancion::getTitulo() {
     return titulo;
