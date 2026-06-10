@@ -1,10 +1,10 @@
-
 #ifndef USUARIO_H
 #define USUARIO_H
 
 #include <string>
 #include "Historial.h"
 #include "Cancion.h"
+#include "Playlist.h"
 
 using namespace std;
 
@@ -15,7 +15,6 @@ private:
     int edad;
     string moodActual;
     int energia;
-    string actividadFavorita;
     string generoFavorito;
 
     Historial historial;
@@ -26,29 +25,29 @@ public:
         int edad,
         string moodActual,
         int energia,
-        string actividadFavorita,
         string generoFavorito
     );
 
     void iniciarSesion();
-    void actualizarMood();
+    void actualizarMood(string nuevoMood);
+    void actualizarGeneroFavorito(string nuevoGenero);
     void verHistorial();
+    void mostrarPerfil();
 
-    //getters y setters
+    Playlist crearPlaylist(string nombre, string moodPrincipal);
+    void escucharCancion(Cancion* cancion);
+
     string getNombre();
     int getEdad();
     string getMoodActual();
     int getEnergia();
-    string getActividadFavorita();
     string getGeneroFavorito();
 
     void setNombre(string nombre);
     void setEdad(int edad);
     void setMoodActual(string moodActual);
     void setEnergia(int energia);
-    void setActividadFavorita(string actividadFavorita);
     void setGeneroFavorito(string generoFavorito);
-    void escucharCancion(Cancion* cancion);
 };
 
 #endif
