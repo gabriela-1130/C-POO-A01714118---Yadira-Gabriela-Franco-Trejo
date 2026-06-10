@@ -1,4 +1,3 @@
-
 #ifndef RECOMENDADORGENERO_H
 #define RECOMENDADORGENERO_H
 
@@ -8,10 +7,13 @@ class RecomendadorGenero : public Recomendador {
 
 private:
     vector<string> generosPreferidos;
+    string generoSeleccionado;
 
 public:
-    Playlist generarPlaylist();
-    vector<Cancion*> recomendarCanciones();
+    RecomendadorGenero();
+
+    Playlist generarPlaylist(Biblioteca* biblioteca);
+    vector<Cancion*> recomendarCanciones(Biblioteca* biblioteca);
 };
 
 #endif
