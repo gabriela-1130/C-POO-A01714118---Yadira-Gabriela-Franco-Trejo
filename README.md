@@ -198,7 +198,13 @@ Ejecutar en Linux/Mac:
 ./musica
 ```
 
-El programa solicitará la creación de un perfil de usuario y posteriormente mostrará un menú interactivo desde el cual será posible:
+Ejecutar en Windows:
+
+```bash
+musica.exe
+```
+
+El programa solicitará la creación de un perfil de usuario y luego mostrará un menú interactivo desde el cual será posible:
 
 * Explorar el catálogo musical.
 * Buscar canciones.
@@ -212,7 +218,7 @@ El programa solicitará la creación de un perfil de usuario y posteriormente mo
 
 ## Conclusión ✦
 
-Este proyecto permitió aplicar conceptos fundamentales de Programación Orientada a Objetos como herencia, polimorfismo, clases abstractas, encapsulación y sobrecarga de métodos mediante el desarrollo de un sistema de recomendación musical. Además, se integró lectura de archivos CSV, gestión de perfiles de usuario, administración de playlists, historial de reproducción y generación de recomendaciones musicales basadas en mood, género y energía.
+Este proyecto me ayudó a aplicar conceptos fundamentales de Programación Orientada a Objetos como herencia, polimorfismo, clases abstractas, encapsulación y sobrecarga de métodos mediante el desarrollo de un sistema de recomendación musical. Además, se integró lectura de archivos CSV, gestión de perfiles de usuario, administración de playlists, historial de reproducción y generación de recomendaciones musicales basadas en mood, género y energía :).
 
 ---
 
