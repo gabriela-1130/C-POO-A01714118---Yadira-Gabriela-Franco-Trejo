@@ -12,15 +12,21 @@ A01714118
 Este proyecto consiste en un sistema de recomendación musical inspirado en plataformas de streaming como Spotify.
 
 El sistema permite:
-- añadir canciones de distintos géneros
-- crear playlists
-- recomendar playlists según mood, género o energía
-- guardar historial de reproducción
-- demostrar conceptos de Programación Orientada a Objetos como herencia, polimorfismo, clases abstractas y sobrecarga
- 
+
+* Cargar automáticamente un catálogo de 200 canciones desde un archivo CSV.
+* Buscar canciones por título.
+* Escuchar canciones y registrar reproducciones.
+* Crear y administrar playlists personalizadas.
+* Generar recomendaciones musicales mediante distintos criterios.
+* Consultar el historial de reproducción.
+* Identificar el mood más frecuente del usuario.
+* Administrar un perfil de usuario con mood, energía y género favorito.
+
+El sistema implementa conceptos fundamentales de Programación Orientada a Objetos como herencia, polimorfismo, clases abstractas, encapsulación y sobrecarga de métodos.
+
 ---
 
-## Consideraciones y casos que harían que el proyecto deje de funcionar
+## Consideraciones y casos que harían que el proyecto deje de funcionar ✌︎㋡
 
 El programa está diseñado para ejecutarse en consola usando C++ estándar.
 
@@ -32,13 +38,17 @@ Casos que podrían causar errores o comportamiento incorrecto:
 
 - Si se intenta crear directamente un objeto de una clase abstracta como `Cancion` o `Recomendador`, el programa no compilará.
 
-- Si se pasa un puntero nulo a métodos como `agregarCancion(Cancion* c)` o `escucharCancion(Cancion* cancion)`, el programa podría fallar al intentar acceder a métodos de una canción inexistente.
+- Si se intenta acceder a una canción inexistente y se eliminan las validaciones implementadas para punteros nulos, podrían producirse errores durante la ejecución.
 
 - Si no se incluyen correctamente los archivos `.h` y `.cpp`, el programa puede marcar errores de compilación.
 
 - Si se compilan todos los archivos `.cpp` por separado además de incluirlos dentro de `main.cpp`, pueden aparecer errores por definiciones duplicadas.
 
 - Si se cambian los nombres de archivos o clases sin actualizar los `#include`, el programa no compilará.
+
+- Si el archivo canciones.csv no se encuentra en la misma carpeta que el ejecutable, el catálogo no podrá cargarse correctamente y las funcionalidades relacionadas con canciones y recomendaciones no funcionarán como se espera.
+
+- Si el formato del archivo canciones.csv es modificado y deja de respetar la estructura: titulo,artista,genero,mood,energia,duracion el programa podría generar errores al intentar convertir los datos o cargar canciones incorrectamente.
 
 ---
 ## Conceptos de POO implementados ⊹ ࣪ ˖
@@ -78,8 +88,9 @@ Ejemplos:
 ```cpp
 virtual void reproducir() = 0;
 virtual void mostrarInfo() = 0;
-virtual Playlist generarPlaylist() = 0;
-virtual vector<Cancion*> recomendarCanciones() = 0;
+
+virtual Playlist generarPlaylist(Biblioteca* biblioteca) = 0;
+virtual vector<Cancion*> recomendarCanciones(Biblioteca* biblioteca) = 0;
 ```
 ---
 
@@ -98,7 +109,8 @@ Las clases hijas sobrescriben métodos como:
 ```cpp
 mostrarInfo()
 reproducir()
-generarPlaylist()
+generarPlaylist(Biblioteca*)
+recomendarCanciones(Biblioteca*)
 ```
 
 permitiendo comportamiento distinto según el objeto.
@@ -115,15 +127,6 @@ agregarCancion(vector<Cancion*> canciones)
 ```
 
 Estos métodos tienen el mismo nombre, pero reciben parámetros diferentes. Esto permite agregar una sola canción o varias canciones utilizando el mismo método.
-
-La clase `Historial` también implementa sobrecarga mediante:
-
-```cpp
-guardarReproduccion()
-guardarReproduccion(Cancion* cancion)
-```
-
-En este caso, ambos métodos comparten el mismo nombre, pero uno no recibe parámetros y el otro recibe un objeto de tipo `Cancion`. Esto permite realizar distintas acciones dependiendo de la información proporcionada al método.
 
 ---
 
@@ -153,48 +156,63 @@ para controlar el acceso a atributos y métodos.
 
 ---
 
+## Archivo CSV ⋆˚꩜｡
+
+El catálogo musical se almacena en el archivo `canciones.csv`.
+
+Cada registro contiene:
+
+```txt
+titulo,artista,genero,mood,energia,duracion
+```
+
+Ejemplo:
+
+```txt
+505,Arctic Monkeys,Indie,Melancolico,6,4.2
+```
+
+Durante la ejecución, la clase `Biblioteca` carga automáticamente las canciones desde este archivo y crea los objetos correspondientes según su género.
+
+---
+
 ## Ejecución del programa 𝄞⨾𓍢ִ໋
 
 Para ejecutar el proyecto:
 
-1. Abrir el proyecto en Dev-C++, CodeBlocks o Visual Studio.
-2. Compilar el archivo `main.cpp`.
+1. Abrir una terminal en la carpeta del proyecto.
+2. Compilar el archivo main.cpp utilizando el comando indicado.
 3. Ejecutar el programa.
 
-### Compilación
-
-El proyecto corre en consola y está hecho en C++ estándar.
+### Compilación ⋆⭒˚.⋆
 
 Compilar con:
 
 ```bash
-g++ main.cpp
+g++ -std=c++17 main.cpp -o musica
 ```
 
 Ejecutar en Linux/Mac:
 
 ```bash
-./a.out
+./musica
 ```
 
-Ejecutar en Windows:
+El programa solicitará la creación de un perfil de usuario y posteriormente mostrará un menú interactivo desde el cual será posible:
 
-```bash
-a.exe
-```
-
-El programa mostrará:
-
-* Polimorfismo en canciones.
-* Creación de playlists.
-* Historial de reproducción.
-* Polimorfismo en recomendadores.
+* Explorar el catálogo musical.
+* Buscar canciones.
+* Escuchar canciones.
+* Crear playlists.
+* Consultar historial.
+* Generar recomendaciones por mood, género o energía.
+* Administrar el perfil del usuario.
 
 ---
 
 ## Conclusión ✦
 
-Este proyecto permitió aplicar conceptos fundamentales de Programación Orientada a Objetos como herencia, polimorfismo, clases abstractas, encapsulación y sobrecarga de métodos mediante el desarrollo de un sistema de recomendación musical inspirado en plataformas de streaming.
+Este proyecto permitió aplicar conceptos fundamentales de Programación Orientada a Objetos como herencia, polimorfismo, clases abstractas, encapsulación y sobrecarga de métodos mediante el desarrollo de un sistema de recomendación musical. Además, se integró lectura de archivos CSV, gestión de perfiles de usuario, administración de playlists, historial de reproducción y generación de recomendaciones musicales basadas en mood, género y energía.
 
 ---
 
@@ -202,19 +220,25 @@ Este proyecto permitió aplicar conceptos fundamentales de Programación Orienta
 
 ```txt
 main.cpp
+
 Cancion.h / Cancion.cpp
 CancionRock.h / CancionRock.cpp
 CancionPop.h / CancionPop.cpp
 CancionIndie.h / CancionIndie.cpp
 CancionMetal.h / CancionMetal.cpp
+
 Playlist.h / Playlist.cpp
 Usuario.h / Usuario.cpp
 Historial.h / Historial.cpp
+Biblioteca.h / Biblioteca.cpp
+
 Recomendador.h / Recomendador.cpp
 RecomendadorMood.h / RecomendadorMood.cpp
 RecomendadorGenero.h / RecomendadorGenero.cpp
 RecomendadorEnergia.h / RecomendadorEnergia.cpp
-Biblioteca.h / Biblioteca.cpp
+
+canciones.csv
+
 ```
 
 
