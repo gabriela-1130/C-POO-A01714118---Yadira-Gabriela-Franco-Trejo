@@ -1,0 +1,201 @@
+titulo,artista,genero,mood,energia,duracion
+Toxicity,System of a Down,Rock,Energetico,9,3.5
+Helena,My Chemical Romance,Rock,Melancolico,7,3.4
+Bohemian Rhapsody,Queen,Rock,Melancolico,8,5.9
+Sweet Child O Mine,Guns N Roses,Rock,Feliz,8,5.0
+Livin On A Prayer,Bon Jovi,Rock,Feliz,8,4.1
+Smells Like Teen Spirit,Nirvana,Rock,Energetico,9,5.0
+The Kill,Thirty Seconds To Mars,Rock,Energetico,8,3.9
+Iris,Goo Goo Dolls,Rock,Melancolico,5,4.8
+Creep,Radiohead,Rock,Triste,4,3.9
+Back In Black,ACDC,Rock,Energetico,9,4.2
+Welcome To The Black Parade,My Chemical Romance,Rock,Energetico,9,5.2
+Cancer,My Chemical Romance,Rock,Triste,3,2.4
+Demolition Lovers,My Chemical Romance,Rock,Melancolico,6,6.1
+Heaven Help Us,My Chemical Romance,Rock,Energetico,8,2.9
+Story Of My Life,Bon Jovi,Rock,Melancolico,5,4.1
+Misunderstood,Bon Jovi,Rock,Melancolico,5,3.5
+Trastevere,Maneskin,Rock,Melancolico,5,3.0
+I Wanna Be Your Slave,Maneskin,Rock,Energetico,8,2.9
+Beggin,Maneskin,Rock,Energetico,8,3.3
+Zitti E Buoni,Maneskin,Rock,Energetico,9,3.2
+Seven Nation Army,The White Stripes,Rock,Energetico,8,3.9
+Mr Brightside,The Killers,Rock,Energetico,9,3.7
+Somebody Told Me,The Killers,Rock,Energetico,8,3.3
+Use Somebody,Kings Of Leon,Rock,Melancolico,6,3.8
+Sex On Fire,Kings Of Leon,Rock,Energetico,8,3.4
+Under The Bridge,Red Hot Chili Peppers,Rock,Melancolico,5,4.4
+Californication,Red Hot Chili Peppers,Rock,Relajado,5,5.3
+Scar Tissue,Red Hot Chili Peppers,Rock,Relajado,5,3.6
+Everlong,Foo Fighters,Rock,Energetico,8,4.1
+The Pretender,Foo Fighters,Rock,Energetico,9,4.3
+Learn To Fly,Foo Fighters,Rock,Feliz,7,3.9
+Wonderwall,Oasis,Rock,Melancolico,5,4.3
+Dont Look Back In Anger,Oasis,Rock,Feliz,6,4.8
+Come As You Are,Nirvana,Rock,Melancolico,6,3.7
+Heart Shaped Box,Nirvana,Rock,Triste,6,4.7
+Basket Case,Green Day,Rock,Energetico,9,3.0
+Wake Me Up When September Ends,Green Day,Rock,Triste,4,4.8
+Boulevard Of Broken Dreams,Green Day,Rock,Melancolico,5,4.3
+American Idiot,Green Day,Rock,Energetico,9,2.9
+Decode,Paramore,Rock,Melancolico,6,4.4
+Misery Business,Paramore,Rock,Energetico,9,3.3
+Aint It Fun,Paramore,Rock,Feliz,7,4.6
+Bring Me To Life,Evanescence,Rock,Melancolico,8,3.9
+My Immortal,Evanescence,Rock,Triste,3,4.4
+Going Under,Evanescence,Rock,Energetico,8,3.6
+In The End,Linkin Park,Rock,Melancolico,7,3.6
+Numb,Linkin Park,Rock,Triste,7,3.1
+What Ive Done,Linkin Park,Rock,Energetico,8,3.4
+Clocks,Coldplay,Rock,Relajado,5,5.1
+Yellow,Coldplay,Rock,Melancolico,4,4.3
+Blinding Lights,The Weeknd,Pop,Feliz,8,3.2
+Style,Taylor Swift,Pop,Feliz,7,3.8
+Levitating,Dua Lipa,Pop,Energetico,8,3.4
+Bad Romance,Lady Gaga,Pop,Energetico,8,4.5
+Firework,Katy Perry,Pop,Feliz,7,3.8
+As It Was,Harry Styles,Pop,Melancolico,6,2.8
+Rolling In The Deep,Adele,Pop,Melancolico,7,3.8
+Call Me Maybe,Carly Rae Jepsen,Pop,Feliz,7,3.2
+Viva La Vida,Coldplay,Pop,Feliz,7,4.0
+Teenage Dream,Katy Perry,Pop,Feliz,7,3.8
+Anti Hero,Taylor Swift,Pop,Melancolico,6,3.3
+Cruel Summer,Taylor Swift,Pop,Energetico,8,3.0
+Blank Space,Taylor Swift,Pop,Feliz,7,3.9
+Shake It Off,Taylor Swift,Pop,Feliz,8,3.6
+Love Story,Taylor Swift,Pop,Feliz,6,3.9
+Save Your Tears,The Weeknd,Pop,Melancolico,6,3.6
+Starboy,The Weeknd,Pop,Energetico,8,3.8
+Cant Feel My Face,The Weeknd,Pop,Energetico,8,3.6
+Watermelon Sugar,Harry Styles,Pop,Feliz,7,2.9
+Adore You,Harry Styles,Pop,Feliz,6,3.5
+Sign Of The Times,Harry Styles,Pop,Melancolico,5,5.7
+Flowers,Miley Cyrus,Pop,Feliz,7,3.3
+Wrecking Ball,Miley Cyrus,Pop,Triste,5,3.7
+Party In The USA,Miley Cyrus,Pop,Feliz,8,3.4
+Drivers License,Olivia Rodrigo,Pop,Triste,4,4.0
+Good 4 U,Olivia Rodrigo,Pop,Energetico,9,2.9
+Vampire,Olivia Rodrigo,Pop,Melancolico,6,3.7
+Deja Vu,Olivia Rodrigo,Pop,Melancolico,5,3.6
+Happier Than Ever,Billie Eilish,Pop,Triste,5,4.9
+Bad Guy,Billie Eilish,Pop,Energetico,7,3.2
+Lovely,Billie Eilish,Pop,Triste,3,3.3
+Ocean Eyes,Billie Eilish,Pop,Relajado,3,3.2
+New Rules,Dua Lipa,Pop,Feliz,8,3.5
+Dance The Night,Dua Lipa,Pop,Energetico,8,2.9
+Dont Start Now,Dua Lipa,Pop,Energetico,8,3.0
+Shallow,Lady Gaga,Pop,Melancolico,5,3.6
+Poker Face,Lady Gaga,Pop,Energetico,8,3.9
+Rain On Me,Lady Gaga,Pop,Energetico,8,3.0
+Roar,Katy Perry,Pop,Feliz,8,3.7
+The One That Got Away,Katy Perry,Pop,Melancolico,5,3.8
+Chandelier,Sia,Pop,Melancolico,7,3.6
+Cheap Thrills,Sia,Pop,Feliz,7,3.5
+Elastic Heart,Sia,Pop,Melancolico,6,4.2
+Hello,Adele,Pop,Triste,4,4.9
+Someone Like You,Adele,Pop,Triste,3,4.8
+Set Fire To The Rain,Adele,Pop,Melancolico,6,4.0
+Thank U Next,Ariana Grande,Pop,Feliz,6,3.5
+No Tears Left To Cry,Ariana Grande,Pop,Feliz,7,3.4
+Into You,Ariana Grande,Pop,Energetico,8,4.0
+Positions,Ariana Grande,Pop,Relajado,5,2.9
+Apocalypse,Cigarettes After Sex,Indie,Melancolico,4,4.5
+Space Song,Beach House,Indie,Melancolico,4,5.3
+Chamber Of Reflection,Mac DeMarco,Indie,Relajado,4,3.9
+505,Arctic Monkeys,Indie,Melancolico,6,4.2
+Sweater Weather,The Neighbourhood,Indie,Relajado,5,4.0
+R U Mine,Arctic Monkeys,Indie,Energetico,8,3.3
+Dog Days Are Over,Florence And The Machine,Indie,Feliz,8,4.2
+Take Me To Church,Hozier,Indie,Melancolico,7,4.0
+Electric Feel,MGMT,Indie,Feliz,7,3.8
+Young Folks,Peter Bjorn And John,Indie,Relajado,5,4.6
+Dreams Tonite,Alvvays,Indie,Relajado,4,3.2
+Archie Marry Me,Alvvays,Indie,Feliz,7,3.2
+The Less I Know The Better,Tame Impala,Indie,Feliz,7,3.6
+Let It Happen,Tame Impala,Indie,Relajado,6,7.8
+Eventually,Tame Impala,Indie,Melancolico,5,5.3
+Borderline,Tame Impala,Indie,Relajado,5,3.9
+Sofia,Clairo,Indie,Feliz,6,3.1
+Bags,Clairo,Indie,Melancolico,4,4.2
+Pretty Girl,Clairo,Indie,Relajado,4,2.6
+Are You Bored Yet,Wallows,Indie,Relajado,5,2.9
+Scrawny,Wallows,Indie,Feliz,7,2.8
+Harness Your Hopes,Pavement,Indie,Feliz,6,3.3
+Harness Your Hope,Biffy Clyro,Indie,Energetico,7,3.5
+Motion Sickness,Phoebe Bridgers,Indie,Melancolico,5,3.5
+Kyoto,Phoebe Bridgers,Indie,Energetico,7,3.0
+Garden Song,Phoebe Bridgers,Indie,Relajado,4,3.4
+First Love Late Spring,Mitski,Indie,Melancolico,5,4.4
+Washing Machine Heart,Mitski,Indie,Energetico,7,2.1
+Nobody,Mitski,Indie,Triste,5,3.1
+Francis Forever,Mitski,Indie,Melancolico,6,2.3
+Brazil,Declan McKenna,Indie,Feliz,7,4.1
+Why Do You Feel So Down,Declan McKenna,Indie,Melancolico,6,3.5
+Sweet Disposition,The Temper Trap,Indie,Feliz,7,3.5
+Pumped Up Kicks,Foster The People,Indie,Feliz,7,4.0
+Sit Next To Me,Foster The People,Indie,Relajado,6,4.0
+Riptide,Vance Joy,Indie,Feliz,6,3.2
+Ophelia,The Lumineers,Indie,Feliz,6,2.4
+Ho Hey,The Lumineers,Indie,Feliz,6,2.4
+Stubborn Love,The Lumineers,Indie,Melancolico,5,4.4
+Cherry Wine,Hozier,Indie,Triste,3,4.0
+Sedated,Hozier,Indie,Relajado,5,3.3
+Cigarette Daydreams,Cage The Elephant,Indie,Melancolico,4,3.3
+Trouble,Cage The Elephant,Indie,Relajado,5,3.5
+Aint No Rest For The Wicked,Cage The Elephant,Indie,Energetico,7,3.0
+Fluorescent Adolescent,Arctic Monkeys,Indie,Feliz,7,3.0
+Do I Wanna Know,Arctic Monkeys,Indie,Melancolico,6,4.5
+Arabella,Arctic Monkeys,Indie,Energetico,8,3.3
+Sunsetz,Cigarettes After Sex,Indie,Relajado,3,3.3
+K,Cigarettes After Sex,Indie,Melancolico,3,5.2
+Cry,Cigarettes After Sex,Indie,Triste,3,4.2
+Master Of Puppets,Metallica,Metal,Energetico,10,8.3
+Enter Sandman,Metallica,Metal,Energetico,9,5.5
+Chop Suey,System of a Down,Metal,Energetico,9,3.5
+Aerials,System of a Down,Metal,Melancolico,7,4.0
+Duality,Slipknot,Metal,Energetico,10,4.2
+Numb,Linkin Park,Metal,Triste,7,3.1
+In The End,Linkin Park,Metal,Melancolico,7,3.6
+Bring Me To Life,Evanescence,Metal,Melancolico,8,3.9
+Paranoid,Black Sabbath,Metal,Energetico,8,2.8
+Fear Of The Dark,Iron Maiden,Metal,Energetico,9,7.3
+Nothing Else Matters,Metallica,Metal,Melancolico,4,6.5
+One,Metallica,Metal,Melancolico,8,7.4
+The Unforgiven,Metallica,Metal,Melancolico,5,6.3
+Battery,Metallica,Metal,Energetico,10,5.1
+Psychosocial,Slipknot,Metal,Energetico,10,4.4
+Before I Forget,Slipknot,Metal,Energetico,10,4.0
+Snuff,Slipknot,Metal,Triste,3,4.6
+Wait And Bleed,Slipknot,Metal,Energetico,9,2.5
+Hypnotize,System of a Down,Metal,Energetico,8,3.1
+Sugar,System of a Down,Metal,Energetico,9,2.5
+Lonely Day,System of a Down,Metal,Triste,4,2.5
+B.Y.O.B,System of a Down,Metal,Energetico,10,4.3
+Tears Dont Fall,Bullet For My Valentine,Metal,Melancolico,8,5.8
+Your Betrayal,Bullet For My Valentine,Metal,Energetico,9,4.8
+Waking The Demon,Bullet For My Valentine,Metal,Energetico,9,4.1
+Can You Feel My Heart,Bring Me The Horizon,Metal,Melancolico,8,3.8
+Throne,Bring Me The Horizon,Metal,Energetico,9,3.1
+Drown,Bring Me The Horizon,Metal,Triste,5,3.4
+Sleepwalking,Bring Me The Horizon,Metal,Melancolico,8,3.5
+Holy Diver,Dio,Metal,Energetico,8,5.5
+Rainbow In The Dark,Dio,Metal,Energetico,8,4.2
+The Trooper,Iron Maiden,Metal,Energetico,9,4.1
+Run To The Hills,Iron Maiden,Metal,Energetico,9,3.9
+Hallowed Be Thy Name,Iron Maiden,Metal,Melancolico,8,7.2
+War Pigs,Black Sabbath,Metal,Melancolico,7,7.9
+Iron Man,Black Sabbath,Metal,Energetico,8,5.9
+Crazy Train,Ozzy Osbourne,Metal,Energetico,9,4.5
+Mama Im Coming Home,Ozzy Osbourne,Metal,Melancolico,5,4.2
+Breaking The Law,Judas Priest,Metal,Energetico,8,2.6
+Painkiller,Judas Priest,Metal,Energetico,10,6.0
+Ace Of Spades,Motorhead,Metal,Energetico,10,2.8
+Killed By Death,Motorhead,Metal,Energetico,9,4.7
+Roots Bloody Roots,Sepultura,Metal,Energetico,10,3.5
+Walk,Pantera,Metal,Energetico,9,5.3
+Cowboys From Hell,Pantera,Metal,Energetico,10,4.1
+Cemetery Gates,Pantera,Metal,Melancolico,7,7.0
+Down With The Sickness,Disturbed,Metal,Energetico,10,4.6
+Stricken,Disturbed,Metal,Energetico,9,4.1
+The Sound Of Silence,Disturbed,Metal,Triste,3,4.1
+My Curse,Killswitch Engage,Metal,Melancolico,8,4.0
