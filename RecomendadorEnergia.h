@@ -1,7 +1,3 @@
-// =========================
-// RecomendadorEnergia.h
-// =========================
-
 #ifndef RECOMENDADORENERGIA_H
 #define RECOMENDADORENERGIA_H
 
@@ -13,8 +9,10 @@ private:
     int nivelEnergia;
 
 public:
-    Playlist generarPlaylist();
-    vector<Cancion*> recomendarCanciones();
+    RecomendadorEnergia();
+
+    Playlist generarPlaylist(Biblioteca* biblioteca);
+    vector<Cancion*> recomendarCanciones(Biblioteca* biblioteca);
 };
 
 #endif
