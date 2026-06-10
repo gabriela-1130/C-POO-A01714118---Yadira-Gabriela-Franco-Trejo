@@ -23,5 +23,11 @@ void CancionIndie::reproducir() {
 }
 
 void CancionIndie::mostrarInfo() {
-    cout << "Cancion Indie: " << titulo << endl;
+
+    cout << "Titulo: " << titulo << endl;
+    cout << "Artista: " << artista << endl;
+    cout << "Genero: " << genero << endl;
+    cout << "Mood: " << mood << endl;
+    cout << "Energia: " << energia << endl;
+    cout << "Duracion: " << duracion << " min" << endl;
 }
