@@ -17,18 +17,30 @@ void Playlist::agregarCancion(vector<Cancion*> canciones) {
     }
 }
 
-void Playlist::eliminarCancion() {
-    cout << "Cancion eliminada" << endl;
+void Playlist::eliminarCancion(int indice) {
+    if (indice < 1 || indice > (int)listaCanciones.size()) {
+        cout << "Indice invalido." << endl;
+        return;
+    }
+
+    listaCanciones.erase(listaCanciones.begin() + indice - 1);
+
+    cout << "Cancion eliminada de la playlist." << endl;
 }
 
 void Playlist::mostrarPlaylist() {
+
     cout << "----------------------------" << endl;
     cout << "Playlist: " << nombre << endl;
     cout << "Mood principal: " << moodPrincipal << endl;
     cout << "Canciones:" << endl;
 
-    for (Cancion* c : listaCanciones) {
-        c->mostrarInfo();
+    for (int i = 0; i < listaCanciones.size(); i++) {
+
+        cout << i + 1 << ". ";
+
+        cout << listaCanciones[i]->getTitulo() << " - " << listaCanciones[i]->getArtista() << endl;
+
         cout << endl;
     }
 
