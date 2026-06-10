@@ -23,5 +23,11 @@ void CancionPop::reproducir() {
 }
 
 void CancionPop::mostrarInfo() {
-    cout << "Cancion Pop: " << titulo << endl;
+
+    cout << "Titulo: " << titulo << endl;
+    cout << "Artista: " << artista << endl;
+    cout << "Genero: " << genero << endl;
+    cout << "Mood: " << mood << endl;
+    cout << "Energia: " << energia << endl;
+    cout << "Duracion: " << duracion << " min" << endl;
 }
