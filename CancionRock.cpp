@@ -23,5 +23,11 @@ void CancionRock::reproducir() {
 }
 
 void CancionRock::mostrarInfo() {
-    cout << "Cancion Rock: " << titulo << endl;
+
+    cout << "Titulo: " << titulo << endl;
+    cout << "Artista: " << artista << endl;
+    cout << "Genero: " << genero << endl;
+    cout << "Mood: " << mood << endl;
+    cout << "Energia: " << energia << endl;
+    cout << "Duracion: " << duracion << " min" << endl;
 }
