@@ -20,7 +20,7 @@ public:
     void agregarCancion(Cancion* c);
     void agregarCancion(vector<Cancion*> canciones);
 
-    void eliminarCancion();
+    void eliminarCancion(int indice);
     void mostrarPlaylist();
 
     string getNombre();
